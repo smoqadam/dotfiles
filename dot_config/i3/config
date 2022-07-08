@@ -225,9 +225,8 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-
-exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --mode 3440x1440 --pos 1920x0 --rotate normal --output DP-3 --off
-
+exec xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --primary --mode 3440x1440 --pos 0x0 --rotate normal --output DP-3 --off
+ 
 exec setxkbmap -layout us,ir
 exec setxkbmap -option 'grp:alt_shift_toggle'
 
