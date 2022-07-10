@@ -226,8 +226,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 exec xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --primary --mode 3440x1440 --pos 0x0 --rotate normal --output DP-3 --off
+exec xinput set-prop "CUST0001:00 06CB:76AF Touchpad" "libinput Tapping Enabled" 1
+
 
 exec_always setxkbmap -layout us,ir
 exec_always setxkbmap -option 'grp:alt_shift_toggle'
-
 exec_always --no-startup-id ~/.config/polybar/launch.sh 
